@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>J&T Cinematic</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <img src="logo.png" alt="Logo" />
+      <h1>J&T Cinematic</h1>
+      <p>Jenna and Tyson's shared movie watchlist</p>
+    </header>
+    <main>
+      <section class="add-movie">
+        <h2>Add a movie</h2>
+        <form id="movie-form">
+          <input
+            type="text"
+            id="movie-title"
+            placeholder="IMDb Link"
+            required
+          />
+          <select id="user-selector" required>
+            <option value="" disabled selected>Who are you?</option>
+            <option value="Jenna">Jenna</option>
+            <option value="Tyson">Tyson</option>
+          </select>
+          <button type="submit">Add to Watchlist</button>
+        </form>
+      </section>
+      <section class="movie-list">
+        <h2>Watchlist</h2>
+        <ul id="watchlist"></ul>
+      </section>
+      <!--
+      <section class="movie-list">
+        <h2>Seen</h2>
+        <ul id="seen-list"></ul>
+      </section>
+      -->
+    </main>
+    <script src="scripts.js"></script>
+  </body>
+</html>

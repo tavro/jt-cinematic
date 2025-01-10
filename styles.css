@@ -1,0 +1,114 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: #ffffff;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 16px 10px;
+  background-color: #1f1f1f;
+  border-bottom: 2px solid #444;
+}
+
+header img {
+  max-height: 64px;
+  filter: invert(100%);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #eeeeee;
+  margin-left: 10px;
+}
+
+header p {
+  margin: 5px 0 0;
+  color: #cccccc;
+  text-align: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+main {
+  padding: 10px;
+}
+
+.add-movie,
+.movie-list {
+  margin-bottom: 16px;
+}
+
+h2 {
+  color: #bbbbbb;
+  font-size: 1.25rem;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #444;
+  border-radius: 5px;
+  background-color: #2c2c2c;
+  color: #fff;
+}
+
+input::placeholder, select {
+  color: #aaaaaa;
+}
+
+button {
+  background-color: #eeeeee;
+  border: none;
+  cursor: pointer;
+  color: #121212;
+}
+
+button:hover {
+  background-color: #cccccc;
+}
+
+.movie-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.movie-list li {
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  background-color: #1e1e1e;
+  margin-bottom: 10px;
+}
+
+.movie-list li span {
+  display: block;
+  font-size: 0.9rem;
+  color: #aaaaaa;
+}
+
+.movie-content {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-poster {
+  width: 100px;
+  height: auto;
+  float: right;
+  margin-top: 10px;
+}
